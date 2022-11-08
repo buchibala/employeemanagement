@@ -1,0 +1,8 @@
+package com.school.model;
+
+public class Payment {
+	String term;
+	String feesAmount;
+	String dues;
+	
+}

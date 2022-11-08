@@ -1,0 +1,65 @@
+package com.school.model;
+
+public class Student {
+	
+	String name;
+	Integer age;
+	String gender;
+	String section;
+	
+	Address address;
+	Progress progress;
+	Payment payment;
+	
+	Message msg;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getSection() {
+		return section;
+	}
+	public void setSection(String section) {
+		this.section = section;
+	}
+	public Message getMsg() {
+		return msg;
+	}
+	public void setMsg(Message msg) {
+		this.msg = msg;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	public Progress getProgress() {
+		return progress;
+	}
+	public void setProgress(Progress progress) {
+		this.progress = progress;
+	}
+	public Payment getPayment() {
+		return payment;
+	}
+	public void setPayment(Payment payment) {
+		this.payment = payment;
+	}
+
+}

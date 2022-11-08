@@ -1,0 +1,26 @@
+package com.school.service;
+
+import org.springframework.stereotype.Service;
+
+import com.school.model.Message;
+import com.school.model.Payment;
+import com.school.model.Progress;
+
+@Service
+public class ManageService {
+
+	public Payment addPayment(Payment payment) {
+		// TODO Auto-generated method stub
+		Message msg=new Message();
+		msg.setMsgcode("001");
+		msg.setMessage("Total Due for the student is "+payment.getDues());
+		payment.setMsg(msg);
+		return payment;
+	}
+
+	public Payment addProgress(Progress progress) {
+		// TODO Auto-generated method stub
+		return progress;
+	}
+
+}

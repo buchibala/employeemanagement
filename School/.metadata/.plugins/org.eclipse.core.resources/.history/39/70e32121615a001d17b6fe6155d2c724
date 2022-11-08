@@ -1,0 +1,22 @@
+package com.school.service;
+
+import org.springframework.stereotype.Service;
+
+import com.school.model.Address;
+import com.school.model.Message;
+import com.school.model.Student;
+
+@Service
+public class StudentService {
+
+	public Student addStudent(Student student) {
+		
+		
+		Message msg=new Message();
+		msg.setMsgcode("001");
+		msg.setMessage("Student added successfully");
+		student.setMsg(msg);
+		return student;
+	}
+
+}

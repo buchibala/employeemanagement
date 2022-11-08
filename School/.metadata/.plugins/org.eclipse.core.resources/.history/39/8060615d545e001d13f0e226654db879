@@ -1,0 +1,47 @@
+package com.school.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="subject")
+public class Subject {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	Integer subid;
+	String subname;
+	Integer mark;
+	String grade;
+	
+	public Integer getSubid() {
+		return subid;
+	}
+	public void setSubid(Integer subid) {
+		this.subid = subid;
+	}
+	public String getSubName() {
+		return subName;
+	}
+	public void setSubName(String subName) {
+		this.subName = subName;
+	}
+	public Integer getMark() {
+		return mark;
+	}
+	public void setMark(Integer mark) {
+		this.mark = mark;
+	}
+	public String getGrade() {
+		return grade;
+	}
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+	
+	
+}

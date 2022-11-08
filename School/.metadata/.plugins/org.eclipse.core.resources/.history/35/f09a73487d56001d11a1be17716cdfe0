@@ -1,0 +1,5 @@
+package com.school.Exception;
+
+public class SchoolException extends RuntimeException{
+
+}

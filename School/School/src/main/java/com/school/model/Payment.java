@@ -1,0 +1,54 @@
+package com.school.model;
+
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+public class Payment {
+	
+	String sid; 
+	String term;
+	String feesAmount;
+	String dues;
+	
+	@JsonFormat
+	Date dueDate;
+	Message msg;
+	public String getTerm() {
+		return term;
+	}
+	public void setTerm(String term) {
+		this.term = term;
+	}
+	public String getFeesAmount() {
+		return feesAmount;
+	}
+	public void setFeesAmount(String feesAmount) {
+		this.feesAmount = feesAmount;
+	}
+	public String getDues() {
+		return dues;
+	}
+	public void setDues(String dues) {
+		this.dues = dues;
+	}
+	public Date getDueDate() {
+		return dueDate;
+	}
+	public void setDueDate(Date dueDate) {
+		this.dueDate = dueDate;
+	}
+	public String getSid() {
+		return sid;
+	}
+	public void setSid(String sid) {
+		this.sid = sid;
+	}
+	public Message getMsg() {
+		return msg;
+	}
+	public void setMsg(Message msg) {
+		this.msg = msg;
+	}
+	
+}

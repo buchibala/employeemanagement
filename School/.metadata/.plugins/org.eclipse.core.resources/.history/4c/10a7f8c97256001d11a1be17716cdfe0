@@ -1,0 +1,12 @@
+package com.school.model;
+
+public class Address {
+
+	String street;
+	String doorNo;
+	String area;
+	Integer pin;
+	String district;
+	String state;
+	String country;
+}

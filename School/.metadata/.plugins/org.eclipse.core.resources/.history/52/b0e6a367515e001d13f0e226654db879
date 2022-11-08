@@ -1,0 +1,33 @@
+package com.school.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.school.model.Address;
+import com.school.model.Message;
+import com.school.model.Student;
+import com.school.repository.AddressRepository;
+import com.school.repository.StudentRepository;
+
+@Service
+public class StudentService {
+
+	@Autowired
+	StudentRepository studentRepository;
+	@Autowired
+	AddressRepository addressRepository;
+	
+	public Student addStudent(Student student) {
+		
+		addressRepository.save(student.getAddress());
+		
+		studentRepository.save(student);
+		
+		Message msg=new Message();
+		msg.setMsgcode("001");
+		msg.setMessage("Student added successfully");
+		//student.setMsg(msg);
+		return student;
+	}
+
+}
