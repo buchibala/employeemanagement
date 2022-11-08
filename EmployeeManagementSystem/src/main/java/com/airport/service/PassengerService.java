@@ -1,7 +1,5 @@
 package com.airport.service;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,10 +10,14 @@ import com.airport.repository.PassengerRepository;
 public class PassengerService {
 	
 	@Autowired
-	PassengerRepository employeeRepository;
+	PassengerRepository passengerRepository;
 	
-	List<Passenger> getallemployees() {
+	public Passenger addpass(Passenger passenger) {
 		
-		return employeeRepository.findAll();
+		passengerRepository.save(passenger);
+		
+		return passenger;
 	}
+
+	
 }

@@ -11,31 +11,44 @@ import javax.persistence.Table;
 @Table()
 public class Passenger {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-	private String firstame;
-	private String lastame;
+	private Integer passengerId;
+	private String firstName;
+	private String lastName;
+	private String passportNo;
+	private String country;
 	private String email;
+	private long phoneNo;
 	
 	
-	public Integer getId() {
-		return id;
+	public Integer getPassengerId() {
+		return passengerId;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setPassengerId(Integer passengerId) {
+		this.passengerId = passengerId;
 	}
-	public String getFirstame() {
-		return firstame;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirstame(String firstame) {
-		this.firstame = firstame;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public String getLastame() {
-		return lastame;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLastame(String lastame) {
-		this.lastame = lastame;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getPassportNo() {
+		return passportNo;
+	}
+	public void setPassportNo(String passportNo) {
+		this.passportNo = passportNo;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
 	}
 	public String getEmail() {
 		return email;
@@ -43,6 +56,13 @@ public class Passenger {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public long getPhoneNo() {
+		return phoneNo;
+	}
+	public void setPhoneNo(long phoneNo) {
+		this.phoneNo = phoneNo;
+	}
 	
-
+	
+	
 }
