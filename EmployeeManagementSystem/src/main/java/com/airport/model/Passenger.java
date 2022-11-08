@@ -1,4 +1,4 @@
-package com.employee.model;
+package com.airport.model;
 
 
 import javax.persistence.Entity;
@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table()
-public class employee {
+public class Passenger {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
